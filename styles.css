@@ -113,7 +113,7 @@
     color: white;
 }
 
-.lista-tareas {
+.lista-tareas { /* Creación de el componenete lista de tareas */
     height: auto;
     width: 300px;
     background-color: #ffffff;
@@ -124,7 +124,7 @@
     font-family: Arial, sans-serif;
 }
 
-.lista-tareas__titulo {
+.lista-tareas__titulo { /* Se aplican estilos a el elemento titulo de el componente lista */
     font-size: var(--titulos-cartas);
     font-weight: bold;
     color: #333;
@@ -132,29 +132,55 @@
     text-align: center;
 }
 
-.lista-tareas__lista {
+.lista-tareas__lista { /* Se aplican estilos a la lista de el componente */
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
 }
 
-.lista-tareas__elemento {
+.lista-tareas__elemento { /* Se aplican estilos a los elementos de la lista que hacen parte de el componente */
     background-color: #fab6b6;
     padding: 12px 15px;
     margin-bottom: 8px;
-    border-radius: 8px;
-    display: flex;
+    border-radius: 8px;;
     align-items: center;
     color: #f15353;
     font-size: 15px;
-    transition: background-color 0.2s ease;
+    transition: 0.2s;
 }
 
-.lista-tareas__elemento:hover {
-    background-color: #e6e6e6;
+.lista-tareas__elemento:hover { /* Se aplican estilos a los elementos cuando pasa el cursor */
+    transform: scale(0.97);
 }
 
-.lista-tareas__elemento--completada {
+.lista-tareas__elemento--completada { /* Se aplican estilos a el modificador de el componente */
     background-color: #d4edda;
     color: #155724;
+}
+
+.contenedor {
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto; 
+    padding: 5px;
+}
+
+.cards {
+    width: 32%;
+    height: 95%;
+    background-color: rgb(32, 32, 32);
+    display: inline-block;
+    border-radius: 5px; 
+    text-align: center;
+    font-size: 0.6rem; 
+}
+
+.cards__img {
+    width: 95%;
+    height: auto;
+}
+
+.cards__texto {
+    color: white;
+    font-size: 12px;
 }
