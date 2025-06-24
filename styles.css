@@ -158,14 +158,14 @@
     color: #155724;
 }
 
-.contenedor {
+.contenedor { /* Creación de un contenedor para los siguiente componentes */
     width: 50vw;
     height: 50vh;
     margin: 0 auto; 
     padding: 5px;
 }
 
-.cards {
+.cards { /* Creación de el componente de cartas, obtenido de la galeria de goku */
     width: 32%;
     height: 95%;
     background-color: rgb(32, 32, 32);
@@ -175,12 +175,41 @@
     font-size: 0.6rem; 
 }
 
-.cards__img {
+.cards__img { /* Estilos para el elemento imagen de el componenete card */
     width: 95%;
     height: auto;
 }
 
-.cards__texto {
+.cards__texto { /* Se aplican estilos para el elemento texto de el componente card */
     color: white;
     font-size: 12px;
+}
+
+.notificacion { /* Creación de el componente de notificación */
+    width: 300px;
+    padding: 15px 20px;
+    margin: 30px auto;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: var(--sombras-cajas);
+    overflow: hidden; 
+}
+
+.notificacion__texto { /* Estilos para el elemento texto de el componenete de alerta */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-right: 30px; 
+}
+
+.notificacion__boton { /* Creación de un boton para cerrar la notificación */
+    background-color: #d4edda;
+    border: none;
+    float: right; 
+    font-size: 10px;
+    font-weight: bold;
+    color: #0e3b17;
+    padding: 0 5px;
 }
