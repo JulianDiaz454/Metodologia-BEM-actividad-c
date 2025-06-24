@@ -1,0 +1,17 @@
+* {  /* Reseteamos los estilos con el selector universal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /* Se crea el selector raiz para generar las customs properties*/
+    
+}
+
+.c-titulos-principales { /* Creamos el componente de titulos principales*/
+    display: block;
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
