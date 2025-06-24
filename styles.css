@@ -79,23 +79,23 @@
     font-weight: 800;
 }
 
-.formulario {
+.formulario { /* Creación del componente de formulario de contacto */
     margin: 0 auto;
-    height: 400px;
+    height: 350px;
     width: 275px;
     border: solid 2px #b8f0ff;
-    background-color: #d8f7ff;
+    background-color: #d8f7ff;  
     box-shadow: var(--sombras-cajas);
 }
 
-.formulario__titulo {
+.formulario__titulo { /* Se aplican estilos para el titulo de el componente formulario */
     display: block;
     font-size: var(--titulos-cartas);
     margin-top: 10px;
     text-align: center;
 }
 
-.formulario__input {
+.formulario__input { /* Se aplican estilos para el elemento input de el componente formulario  */
     display: block;
     margin: 15px auto;
     border: none;
@@ -103,7 +103,7 @@
     border-radius: 12px;
 }
 
-.formulario__boton {
+.formulario__boton { /* Se aplican estilos para el elemento boton en el formulario */
     display: block;
     margin: 10px auto;
     border: none;
@@ -111,4 +111,50 @@
     padding: 10px;
     background-color: rgb(0, 47, 255);
     color: white;
+}
+
+.lista-tareas {
+    height: auto;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: var(--sombras-cajas);
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.lista-tareas__titulo {
+    font-size: var(--titulos-cartas);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lista-tareas__lista {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.lista-tareas__elemento {
+    background-color: #fab6b6;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #f15353;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+.lista-tareas__elemento:hover {
+    background-color: #e6e6e6;
+}
+
+.lista-tareas__elemento--completada {
+    background-color: #d4edda;
+    color: #155724;
 }
