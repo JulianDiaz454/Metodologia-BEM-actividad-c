@@ -216,10 +216,10 @@
     padding: 0 5px;
 }
 
-.tabla-datos {
+.tabla-datos { /* Creación de el componente tabla de datos */
     height: 250px; 
     width: 500px;
-    margin: 30px auto;
+    margin: 20px auto;
     background-color: #e0f2f7; 
     border-radius: 8px;
     box-shadow: var(--sombras-cajas);
@@ -227,35 +227,339 @@
     text-align: center;
 }
 
-.tabla-datos__titulo {
+.tabla-datos__titulo { /* estilos para el titulo de el componente */
     font-size: var(--titulos-cartas);
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
 }
 
-.tabla-datos__tabla {
+.tabla-datos__tabla { /* Estilos para unos elementos de el bloque tabla */
     width: 100%;
 }
 
-.tabla-datos__fila {
+.tabla-datos__fila { /* Estilos de borde para elementos */
     border-bottom: 1px solid #b2ebf2; 
 }
 
-.tabla-datos__fila:last-child {
+.tabla-datos__fila:last-child { /* Estilos a el ultimo elemento de el bloque */
     border-bottom: none;
 }
 
-.tabla-datos__celda-encabezado {
+.tabla-datos__celda-encabezado { /* Estilos especificos a el encabezado de la tabla */
     padding: 10px 12px;
     text-align: left;
     color: #000; 
     font-weight: bold;
 }
 
-.tabla-datos__celda {
+.tabla-datos__celda { /* Estilos para las celdas de el componenete */
     padding: 8px 12px;
     text-align: left;
     color: #303030;
 }
 
+.pie-pagina { /* Creación del componente de pie de página */
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 50px;
+    clear: both; /* Limpia cualquier float anterior */
+}
+
+.pie-pagina__texto { /* Estilos para el texto de el componente */
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.pie-pagina__enlaces { /* Estilos para la lista de enlaces */
+    list-style: none;
+    padding: 0;
+}
+
+.pie-pagina__enlace-item { /* Estilos para cada elemento de enlace */
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.pie-pagina__link { /* Estilos para los enlaces del pie de página */
+    color: #c5c5c5;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.tabs { /* Creación del componente de pestañas (tabs) */
+    width: 400px;
+    margin: 30px auto;
+    background-color: #f0f8ff;
+    border: 2px solid #cceeff;
+    border-radius: 5px;
+    box-shadow: var(--sombras-cajas);
+}
+
+.tabs__navegacion { /* Estilos para la navegación de las pestañas que contiene los enlaces*/
+    background-color: #e0f2f7;
+    border-bottom: 1px solid #cceeff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.tabs__boton { /* Estilos para cada botón de pestaña */
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #cceeff;
+    color: #0056b3;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tabs__contenido { /* Estilos para el área de contenido de las pestañas */
+    padding: 20px;
+}
+
+.tabs__texto { /* Estilos para el texto dentro del contenido */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.selector-categorias { /* Creación del componente selector de categorías */
+    width: 250px;
+    margin: 30px auto;
+    background-color: #fcfcfc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: var(--sombras-cajas);
+    padding: 15px;
+}
+
+.selector-categorias__titulo { /* Estilos para el título del selector */
+    font-size: var(--titulos-cartas);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.selector-categorias__lista { /* Estilos para la lista de categorías */
+    list-style: none;
+    padding: 0;
+}
+
+.selector-categorias__item { /* Estilos para cada elemento de categoría */
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.selector-categorias__enlace { /* Estilos para los enlaces de categoría */
+    display: block;
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+
+.calificacion { /* Creación del componente de calificación de nota*/
+    width: 220px;
+    margin: 20px auto;
+    background-color: #fcf9f5;
+    border-radius: 8px;
+    box-shadow: var(--sombras-cajas);
+    padding: 15px;
+    text-align: center;
+}
+
+.calificacion__texto { /* Estilos para el texto de calificación */
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.calificacion__promedio { /* Estilos para el texto de promedio */
+    font-size: 13px;
+    color: #777;
+}
+
+.reproductor { /* Creación del componente reproductor de video */
+    width: 600px;
+    height: 400px;
+    margin: 30px auto;
+    background-color: #ebebeb;
+    border-radius: 8px;
+    box-shadow: var(--sombras-cajas);
+    padding: 20px;
+    text-align: center;
+}
+
+.reproductor__titulo { /* Estilos para el título del video */
+    font-size: var(--titulos-cartas);
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.reproductor__contenedor { /* Contenedor para el área del video */
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.reproductor__video { /* Estilos para el elemento video de el componente reproductor */
+    width: 100%;
+    height: 100%;
+}
+
+.barra-lateral {
+    width: 200px;
+    height: 200px;
+    background-color: #000; 
+    border-right: 1px solid #333; 
+    padding: 20px 15px;
+    float: left; 
+    margin: 30px 0 30px 20px;
+}
+
+.barra-lateral__titulo { /* Estilos para el título de la barra lateral */
+    font-size: var(--titulos-cartas);
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 20px;
+}
+
+.barra-lateral__lista { /* Estilos para la lista de la barra lateral */
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.barra-lateral__item { /* Estilos para cada elemento de la lista */
+    margin-bottom: 10px;
+}
+
+.barra-lateral__enlace { /* Estilos para los enlaces de la barra lateral */
+    display: block;
+    text-decoration: none;
+    color: #ccc; 
+    font-size: 15px;
+    background-color: #333; 
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.barra-lateral__enlace:hover { /* Efecto hover para los enlaces de la barra lateral */
+    background-color: #555555; 
+    color: #ffffff; 
+}
+
+.carrito { /* Creación del componente de carrito */
+    width: 300px;
+    margin: 30px auto;
+    background-color: #fff0f0; 
+    border-radius: 10px; 
+    box-shadow: var(--sombras-cajas);
+    padding: 20px;
+    text-align: center;
+}
+
+.carrito__titulo { /* Estilos para el título del carrito */
+    font-size: var(--titulos-cartas);
+    font-weight: bold;
+    color: #663333;  
+    margin-bottom: 20px;
+}
+
+.carrito__fila { /* Estilos para cada fila de ítem del carrito */
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffecec; 
+}
+
+.carrito__nombre { /* Estilos para el nombre del ítem */
+    float: left;
+    color: #554444; 
+    font-size: 16px; 
+}
+
+.carrito__precio { /* Estilos para el precio del ítem */
+    float: right;
+    color: #442222; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.carrito__total { /* Estilos para la sección del total */
+    overflow: hidden; 
+    padding: 15px 0; 
+    margin-top: 15px;
+}
+
+.carrito__total-texto { /* Estilos para el texto "Total" */
+    float: left;
+    font-size: 18px; 
+    font-weight: bold;
+    color: #331111;
+}
+
+.carrito__total-valor { /* Estilos para el valor total */
+    float: right;
+    font-size: 18px; 
+    font-weight: bold;
+    color: #331111; 
+}
+
+.carrito__boton { /* Estilos para el botón de compra */
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8888;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 25px; 
+}
+
+.titulos-principales--componente-14 { /* Generamos espacio entre los titulos para el componente 14 */
+    margin-top: 50vh;
+}
+
+.blog { /* Se crea el componente blog */
+    width: 370px;
+    height: 450px;
+    background-color: #e6e6e6;
+    padding-top: 10px;
+    box-shadow: var(--sombras-cajas);
+    margin: 0 auto;
+    margin-bottom: 20vh;
+    border-radius: 8px;
+}
+
+.blog__usuario { /* Se crean estilos para el elemento que muestra el nombre de usuario */
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.blog__img { /* Se aplican estilos a la imagen que hace parte de el componente */
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.blog__texto {
+    margin-left: 20px;
+    font-size: 15px;
+}
